@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 public class Produto {
 	
 	//Mapeamento dos atributos da tabela produto;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
