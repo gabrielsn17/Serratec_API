@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "ce339bb4-a40c-43b8-b89c-8bde8b649e3c",
+		"name": "Exercício 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27353895"
+	},
+	"item": [
+		{
+			"name": "Listar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/planetario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planetario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir novo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Éris\",\r\n    \"diametro_equatorial\": 2326,\r\n    \"inclinacao\": 44.044,\r\n    \"gravidade\": 0.82,\r\n    \"tipo\":\"Planeta anão, Terrestre/Rochoso\",\r\n    \"possui_lua\": true,\r\n    \"duracao_dia\" : 25.9,\r\n    \"quantidade_luas\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/planetario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planetario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/planetario/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planetario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar por tipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/planetario/tipo/estrela",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planetario",
+						"tipo",
+						"estrela"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Informações",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/planetario/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planetario",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar corpo celeste por Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Éris\",\r\n    \"diametro_equatorial\": 2326,\r\n    \"inclinacao\": 44.044,\r\n    \"gravidade\": 0.82,\r\n    \"tipo\":\"Planeta anão, Terrestre/Rochoso\",\r\n    \"possui_lua\": true,\r\n    \"duracao_dia\" : 25.9,\r\n    \"quantidade_luas\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/planetario/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planetario",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar por Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/planetario/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planetario",
+						"14"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
